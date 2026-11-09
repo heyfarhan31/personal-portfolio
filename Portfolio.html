@@ -60,3 +60,11 @@
             z-index: -1;
             overflow: hidden;
         }     
+
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            opacity: var(--blob-opacity);
+            animation: float 16s infinite alternate ease-in-out;
+        }
