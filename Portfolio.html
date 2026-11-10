@@ -68,3 +68,33 @@
             opacity: var(--blob-opacity);
             animation: float 16s infinite alternate ease-in-out;
         }
+
+.blob-1 {
+            width: 450px;
+            height: 450px;
+            background: var(--accent-start);
+            top: -100px;
+            left: -100px;
+        }
+
+        .blob-2 {
+            width: 500px;
+            height: 500px;
+            background: var(--accent-end);
+            bottom: -150px;
+            right: -100px;
+            animation-delay: -8s;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(60px, 40px) scale(1.1); }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }        
+
+        
